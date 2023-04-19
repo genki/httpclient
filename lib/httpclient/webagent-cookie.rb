@@ -200,7 +200,7 @@ class WebAgent
         when 'httponly'
           @http_only = true  ## value may nil, but must 'true'.
         else
-          warn("Unknown key: #{key} = #{value}")
+          warn("Unknown key: #{key} = #{value}") if $VERBOSE
         end
       }
     end
